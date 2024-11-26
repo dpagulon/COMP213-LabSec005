@@ -30,6 +30,11 @@ nav ul{
     padding-left: 0px;
     font-size: 1.2em;
 }
+nav a{
+    transition-property: color;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
 nav a:link{
     color: #5C7FA3;
 }
@@ -88,6 +93,10 @@ input, textarea{
     display:block;
     margin-bottom:20px;
 }
+video{
+    float:right;
+    padding:20px;
+}
 .text{
     text-align: left;
 }
@@ -133,6 +142,19 @@ input, textarea{
 }
 #desktop{
     display: inline;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: center;
+    align-items: center;
+}
+#thumbnails{
+    text-align: center;
+}
+#bigimage{
+    width:100%;
+    height: auto;
 }
 /*tablet view */
 @media only screen and (max-width:1024px){
